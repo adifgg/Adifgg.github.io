@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adifgg</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #aee9ff;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      color: #0077ff;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .description {
+      font-size: 16px;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .button {
+      background-color: #fff;
+      color: #000;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      font-weight: 600;
+      border: 2px solid #000;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 300px;
+      animation: fadeInUp 1.4s ease;
+    }
+
+    .button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 28px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">Adifgg</div>
+
+  <div class="description">
+    Makasih ya yang sudah support aku 😄
+  </div>
+
+  <a href="https://sociabuzz.com/adifgg/donate" class="button" target="_blank">
+    <span class="icon">💖</span> Link Donate
+  </a>
+
+  <a href="https://www.tiktok.com/@adifpratama11" class="button" target="_blank">
+    <span class="icon">🎵</span> TikTok
+  </a>
+
+  <a href="https://youtube.com/@adifaja-kz2oh?si=PGbKslInzQGOwU8L" class="button" target="_blank">
+    <span class="icon">▶️</span> YouTube
+  </a>
+
+</body>
+</html>
