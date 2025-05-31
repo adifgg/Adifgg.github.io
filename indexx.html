@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Linktree Clone</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .name {
+    margin: 10px 0 5px;
+    font-size: 24px;
+  }
+
+  .bio {
+    margin: 0 0 20px;
+    color: #666;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link {
+    display: block;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .link:hover {
+    background-color: #005bb5;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <h1 class="name">Adifgg</h1>
+      <p class="bio">Welcome to my Website</p>
+    </div>
+    <div class="links">
+      <a href="https://sociabuzz.com/adifgg/donate" target="_blank" rel="noopener noreferrer" class="link">Donate</a>
+      <a href="https://youtube.com/@adifaja-kz2oh?si=PGbKslInzQGOwU8L" target="_blank" rel="noopener noreferrer" class="link">Youtube</a>
+      <a href="https://www.tiktok.com/@adifpratama11" target="_blank" rel="noopener noreferrer" class="link">Tiktok</a>
+    </div>
+  </div>
+
+  <script>
+    console.log("Linktree page loaded!");
+    document.querySelectorAll('.link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        console.log(`Link clicked: ${e.target.href}`);
+      });
+    });
+  </script>
+</body>
+</html>
